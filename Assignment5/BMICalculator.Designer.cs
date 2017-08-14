@@ -30,21 +30,26 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.HeightLabel = new System.Windows.Forms.Label();
-            this.HeightTextBox = new System.Windows.Forms.TextBox();
             this.WeightLabel = new System.Windows.Forms.Label();
+            this.BMIResultTextBox = new System.Windows.Forms.TextBox();
+            this.CalculateBMIButton = new System.Windows.Forms.Button();
             this.WeightTextBox = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.EightButton = new System.Windows.Forms.Button();
+            this.HeightTextBox = new System.Windows.Forms.TextBox();
             this.SevenButton = new System.Windows.Forms.Button();
+            this.EightButton = new System.Windows.Forms.Button();
             this.NineButton = new System.Windows.Forms.Button();
             this.FourButton = new System.Windows.Forms.Button();
             this.FiveButton = new System.Windows.Forms.Button();
             this.SixButton = new System.Windows.Forms.Button();
             this.OneButtton = new System.Windows.Forms.Button();
-            this.TwoButton = new System.Windows.Forms.Button();
-            this.ThreeButton = new System.Windows.Forms.Button();
-            this.BackSpaceButton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.ResetButton = new System.Windows.Forms.Button();
+            this.ProgressBar = new System.Windows.Forms.ProgressBar();
+            this.BackSpaceButton = new System.Windows.Forms.Button();
+            this.ThreeButton = new System.Windows.Forms.Button();
+            this.TwoButton = new System.Windows.Forms.Button();
+            this.MetricButton = new System.Windows.Forms.RadioButton();
+            this.ImperialButton = new System.Windows.Forms.RadioButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,29 +59,32 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.621993F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.30928F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.Controls.Add(this.HeightLabel, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.HeightTextBox, 7, 0);
             this.tableLayoutPanel1.Controls.Add(this.WeightLabel, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.WeightTextBox, 7, 1);
-            this.tableLayoutPanel1.Controls.Add(this.NineButton, 6, 3);
-            this.tableLayoutPanel1.Controls.Add(this.EightButton, 5, 3);
-            this.tableLayoutPanel1.Controls.Add(this.SevenButton, 4, 3);
-            this.tableLayoutPanel1.Controls.Add(this.SixButton, 6, 4);
-            this.tableLayoutPanel1.Controls.Add(this.FiveButton, 5, 4);
-            this.tableLayoutPanel1.Controls.Add(this.FourButton, 4, 4);
-            this.tableLayoutPanel1.Controls.Add(this.TwoButton, 5, 5);
-            this.tableLayoutPanel1.Controls.Add(this.OneButtton, 4, 5);
-            this.tableLayoutPanel1.Controls.Add(this.button1, 6, 6);
-            this.tableLayoutPanel1.Controls.Add(this.BackSpaceButton, 5, 6);
-            this.tableLayoutPanel1.Controls.Add(this.ResetButton, 4, 7);
-            this.tableLayoutPanel1.Controls.Add(this.ThreeButton, 6, 5);
+            this.tableLayoutPanel1.Controls.Add(this.BMIResultTextBox, 3, 9);
+            this.tableLayoutPanel1.Controls.Add(this.CalculateBMIButton, 3, 7);
+            this.tableLayoutPanel1.Controls.Add(this.WeightTextBox, 6, 1);
+            this.tableLayoutPanel1.Controls.Add(this.HeightTextBox, 6, 0);
+            this.tableLayoutPanel1.Controls.Add(this.SevenButton, 6, 2);
+            this.tableLayoutPanel1.Controls.Add(this.EightButton, 7, 2);
+            this.tableLayoutPanel1.Controls.Add(this.NineButton, 8, 2);
+            this.tableLayoutPanel1.Controls.Add(this.FourButton, 6, 3);
+            this.tableLayoutPanel1.Controls.Add(this.FiveButton, 7, 3);
+            this.tableLayoutPanel1.Controls.Add(this.SixButton, 8, 3);
+            this.tableLayoutPanel1.Controls.Add(this.OneButtton, 6, 4);
+            this.tableLayoutPanel1.Controls.Add(this.button1, 8, 5);
+            this.tableLayoutPanel1.Controls.Add(this.ResetButton, 6, 6);
+            this.tableLayoutPanel1.Controls.Add(this.ProgressBar, 3, 8);
+            this.tableLayoutPanel1.Controls.Add(this.BackSpaceButton, 6, 5);
+            this.tableLayoutPanel1.Controls.Add(this.ThreeButton, 8, 4);
+            this.tableLayoutPanel1.Controls.Add(this.TwoButton, 7, 4);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(1, 92);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 10;
@@ -92,6 +100,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(291, 337);
             this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel1.Click += new System.EventHandler(this.NumberKeysButton_Click);
             // 
             // HeightLabel
             // 
@@ -103,16 +112,6 @@
             this.HeightLabel.Size = new System.Drawing.Size(136, 31);
             this.HeightLabel.TabIndex = 0;
             this.HeightLabel.Text = "My Height";
-            // 
-            // HeightTextBox
-            // 
-            this.HeightTextBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.tableLayoutPanel1.SetColumnSpan(this.HeightTextBox, 3);
-            this.HeightTextBox.Location = new System.Drawing.Point(206, 6);
-            this.HeightTextBox.Multiline = true;
-            this.HeightTextBox.Name = "HeightTextBox";
-            this.HeightTextBox.Size = new System.Drawing.Size(82, 20);
-            this.HeightTextBox.TabIndex = 1;
             // 
             // WeightLabel
             // 
@@ -126,155 +125,231 @@
             this.WeightLabel.TabIndex = 1;
             this.WeightLabel.Text = "My Weight";
             // 
+            // BMIResultTextBox
+            // 
+            this.BMIResultTextBox.BackColor = System.Drawing.Color.AliceBlue;
+            this.tableLayoutPanel1.SetColumnSpan(this.BMIResultTextBox, 6);
+            this.BMIResultTextBox.Cursor = System.Windows.Forms.Cursors.No;
+            this.BMIResultTextBox.Location = new System.Drawing.Point(90, 300);
+            this.BMIResultTextBox.Multiline = true;
+            this.BMIResultTextBox.Name = "BMIResultTextBox";
+            this.BMIResultTextBox.ReadOnly = true;
+            this.BMIResultTextBox.Size = new System.Drawing.Size(113, 34);
+            this.BMIResultTextBox.TabIndex = 17;
+            // 
+            // CalculateBMIButton
+            // 
+            this.tableLayoutPanel1.SetColumnSpan(this.CalculateBMIButton, 4);
+            this.CalculateBMIButton.Location = new System.Drawing.Point(90, 234);
+            this.CalculateBMIButton.Name = "CalculateBMIButton";
+            this.CalculateBMIButton.Size = new System.Drawing.Size(110, 27);
+            this.CalculateBMIButton.TabIndex = 18;
+            this.CalculateBMIButton.Text = "Calculate BMI";
+            this.CalculateBMIButton.UseVisualStyleBackColor = true;
+            // 
             // WeightTextBox
             // 
             this.WeightTextBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.tableLayoutPanel1.SetColumnSpan(this.WeightTextBox, 3);
-            this.WeightTextBox.Location = new System.Drawing.Point(206, 39);
+            this.WeightTextBox.Location = new System.Drawing.Point(177, 39);
             this.WeightTextBox.Multiline = true;
             this.WeightTextBox.Name = "WeightTextBox";
-            this.WeightTextBox.Size = new System.Drawing.Size(82, 20);
+            this.WeightTextBox.Size = new System.Drawing.Size(81, 20);
             this.WeightTextBox.TabIndex = 2;
             // 
-            // button1
+            // HeightTextBox
             // 
-            this.button1.BackColor = System.Drawing.Color.PaleGreen;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(177, 201);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(23, 27);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "0";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // EightButton
-            // 
-            this.EightButton.BackColor = System.Drawing.Color.PaleGreen;
-            this.EightButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EightButton.Location = new System.Drawing.Point(148, 102);
-            this.EightButton.Name = "EightButton";
-            this.EightButton.Size = new System.Drawing.Size(23, 27);
-            this.EightButton.TabIndex = 6;
-            this.EightButton.Text = "8";
-            this.EightButton.UseVisualStyleBackColor = false;
+            this.HeightTextBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.tableLayoutPanel1.SetColumnSpan(this.HeightTextBox, 3);
+            this.HeightTextBox.Location = new System.Drawing.Point(177, 6);
+            this.HeightTextBox.Multiline = true;
+            this.HeightTextBox.Name = "HeightTextBox";
+            this.HeightTextBox.Size = new System.Drawing.Size(81, 20);
+            this.HeightTextBox.TabIndex = 1;
             // 
             // SevenButton
             // 
             this.SevenButton.BackColor = System.Drawing.Color.PaleGreen;
             this.SevenButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SevenButton.Location = new System.Drawing.Point(119, 102);
+            this.SevenButton.Location = new System.Drawing.Point(177, 69);
             this.SevenButton.Name = "SevenButton";
             this.SevenButton.Size = new System.Drawing.Size(23, 27);
             this.SevenButton.TabIndex = 7;
             this.SevenButton.Text = "7";
             this.SevenButton.UseVisualStyleBackColor = false;
+            this.SevenButton.Click += new System.EventHandler(this.NumberKeysButton_Click);
+            // 
+            // EightButton
+            // 
+            this.EightButton.BackColor = System.Drawing.Color.PaleGreen;
+            this.EightButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EightButton.Location = new System.Drawing.Point(206, 69);
+            this.EightButton.Name = "EightButton";
+            this.EightButton.Size = new System.Drawing.Size(23, 27);
+            this.EightButton.TabIndex = 6;
+            this.EightButton.Text = "8";
+            this.EightButton.UseVisualStyleBackColor = false;
+            this.EightButton.Click += new System.EventHandler(this.NumberKeysButton_Click);
             // 
             // NineButton
             // 
             this.NineButton.BackColor = System.Drawing.Color.PaleGreen;
             this.NineButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NineButton.Location = new System.Drawing.Point(177, 102);
+            this.NineButton.Location = new System.Drawing.Point(235, 69);
             this.NineButton.Name = "NineButton";
             this.NineButton.Size = new System.Drawing.Size(23, 27);
             this.NineButton.TabIndex = 8;
             this.NineButton.Text = "9";
             this.NineButton.UseVisualStyleBackColor = false;
+            this.NineButton.Click += new System.EventHandler(this.NumberKeysButton_Click);
             // 
             // FourButton
             // 
             this.FourButton.BackColor = System.Drawing.Color.PaleGreen;
             this.FourButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FourButton.Location = new System.Drawing.Point(119, 135);
+            this.FourButton.Location = new System.Drawing.Point(177, 102);
             this.FourButton.Name = "FourButton";
             this.FourButton.Size = new System.Drawing.Size(23, 27);
             this.FourButton.TabIndex = 9;
             this.FourButton.Text = "4";
             this.FourButton.UseVisualStyleBackColor = false;
+            this.FourButton.Click += new System.EventHandler(this.NumberKeysButton_Click);
             // 
             // FiveButton
             // 
             this.FiveButton.BackColor = System.Drawing.Color.PaleGreen;
             this.FiveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FiveButton.Location = new System.Drawing.Point(148, 135);
+            this.FiveButton.Location = new System.Drawing.Point(206, 102);
             this.FiveButton.Name = "FiveButton";
             this.FiveButton.Size = new System.Drawing.Size(23, 27);
             this.FiveButton.TabIndex = 10;
             this.FiveButton.Text = "5";
             this.FiveButton.UseVisualStyleBackColor = false;
+            this.FiveButton.Click += new System.EventHandler(this.NumberKeysButton_Click);
             // 
             // SixButton
             // 
             this.SixButton.BackColor = System.Drawing.Color.PaleGreen;
             this.SixButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SixButton.Location = new System.Drawing.Point(177, 135);
+            this.SixButton.Location = new System.Drawing.Point(235, 102);
             this.SixButton.Name = "SixButton";
             this.SixButton.Size = new System.Drawing.Size(23, 27);
             this.SixButton.TabIndex = 11;
             this.SixButton.Text = "6";
             this.SixButton.UseVisualStyleBackColor = false;
+            this.SixButton.Click += new System.EventHandler(this.NumberKeysButton_Click);
             // 
             // OneButtton
             // 
             this.OneButtton.BackColor = System.Drawing.Color.PaleGreen;
             this.OneButtton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OneButtton.Location = new System.Drawing.Point(119, 168);
+            this.OneButtton.Location = new System.Drawing.Point(177, 135);
             this.OneButtton.Name = "OneButtton";
             this.OneButtton.Size = new System.Drawing.Size(23, 27);
             this.OneButtton.TabIndex = 12;
             this.OneButtton.Text = "1";
             this.OneButtton.UseVisualStyleBackColor = false;
+            this.OneButtton.Click += new System.EventHandler(this.NumberKeysButton_Click);
             // 
-            // TwoButton
+            // button1
             // 
-            this.TwoButton.BackColor = System.Drawing.Color.PaleGreen;
-            this.TwoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TwoButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.TwoButton.Location = new System.Drawing.Point(148, 168);
-            this.TwoButton.Name = "TwoButton";
-            this.TwoButton.Size = new System.Drawing.Size(23, 27);
-            this.TwoButton.TabIndex = 13;
-            this.TwoButton.Text = "2";
-            this.TwoButton.UseVisualStyleBackColor = false;
-            // 
-            // ThreeButton
-            // 
-            this.ThreeButton.BackColor = System.Drawing.Color.PaleGreen;
-            this.ThreeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ThreeButton.Location = new System.Drawing.Point(177, 168);
-            this.ThreeButton.Name = "ThreeButton";
-            this.ThreeButton.Size = new System.Drawing.Size(23, 27);
-            this.ThreeButton.TabIndex = 14;
-            this.ThreeButton.Text = "3";
-            this.ThreeButton.UseVisualStyleBackColor = false;
-            // 
-            // BackSpaceButton
-            // 
-            this.BackSpaceButton.BackColor = System.Drawing.Color.PaleGreen;
-            this.BackSpaceButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BackSpaceButton.Location = new System.Drawing.Point(148, 201);
-            this.BackSpaceButton.Name = "BackSpaceButton";
-            this.BackSpaceButton.Size = new System.Drawing.Size(23, 27);
-            this.BackSpaceButton.TabIndex = 15;
-            this.BackSpaceButton.Text = "⌫";
-            this.BackSpaceButton.UseVisualStyleBackColor = false;
+            this.button1.BackColor = System.Drawing.Color.PaleGreen;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(235, 168);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(23, 27);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "0";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.NumberKeysButton_Click);
             // 
             // ResetButton
             // 
             this.ResetButton.BackColor = System.Drawing.Color.Yellow;
             this.tableLayoutPanel1.SetColumnSpan(this.ResetButton, 3);
             this.ResetButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResetButton.Location = new System.Drawing.Point(119, 234);
+            this.ResetButton.Location = new System.Drawing.Point(177, 201);
             this.ResetButton.Name = "ResetButton";
-            this.ResetButton.Size = new System.Drawing.Size(57, 27);
+            this.ResetButton.Size = new System.Drawing.Size(81, 27);
             this.ResetButton.TabIndex = 16;
             this.ResetButton.Text = "Reset";
             this.ResetButton.UseVisualStyleBackColor = false;
+            // 
+            // ProgressBar
+            // 
+            this.tableLayoutPanel1.SetColumnSpan(this.ProgressBar, 4);
+            this.ProgressBar.Location = new System.Drawing.Point(90, 267);
+            this.ProgressBar.Name = "ProgressBar";
+            this.ProgressBar.Size = new System.Drawing.Size(110, 23);
+            this.ProgressBar.TabIndex = 19;
+            // 
+            // BackSpaceButton
+            // 
+            this.BackSpaceButton.BackColor = System.Drawing.Color.PaleGreen;
+            this.tableLayoutPanel1.SetColumnSpan(this.BackSpaceButton, 2);
+            this.BackSpaceButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackSpaceButton.Location = new System.Drawing.Point(177, 168);
+            this.BackSpaceButton.Name = "BackSpaceButton";
+            this.BackSpaceButton.Size = new System.Drawing.Size(52, 27);
+            this.BackSpaceButton.TabIndex = 15;
+            this.BackSpaceButton.Text = "⌫";
+            this.BackSpaceButton.UseVisualStyleBackColor = false;
+            this.BackSpaceButton.Click += new System.EventHandler(this.NumberKeysButton_Click);
+            // 
+            // ThreeButton
+            // 
+            this.ThreeButton.BackColor = System.Drawing.Color.PaleGreen;
+            this.ThreeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ThreeButton.Location = new System.Drawing.Point(235, 135);
+            this.ThreeButton.Name = "ThreeButton";
+            this.ThreeButton.Size = new System.Drawing.Size(23, 27);
+            this.ThreeButton.TabIndex = 14;
+            this.ThreeButton.Text = "3";
+            this.ThreeButton.UseVisualStyleBackColor = false;
+            this.ThreeButton.Click += new System.EventHandler(this.NumberKeysButton_Click);
+            // 
+            // TwoButton
+            // 
+            this.TwoButton.BackColor = System.Drawing.Color.PaleGreen;
+            this.TwoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TwoButton.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.TwoButton.Location = new System.Drawing.Point(206, 135);
+            this.TwoButton.Name = "TwoButton";
+            this.TwoButton.Size = new System.Drawing.Size(23, 27);
+            this.TwoButton.TabIndex = 13;
+            this.TwoButton.Text = "2";
+            this.TwoButton.UseVisualStyleBackColor = false;
+            this.TwoButton.Click += new System.EventHandler(this.NumberKeysButton_Click);
+            // 
+            // MetricButton
+            // 
+            this.MetricButton.AutoSize = true;
+            this.MetricButton.Location = new System.Drawing.Point(1, 47);
+            this.MetricButton.Name = "MetricButton";
+            this.MetricButton.Size = new System.Drawing.Size(54, 17);
+            this.MetricButton.TabIndex = 1;
+            this.MetricButton.TabStop = true;
+            this.MetricButton.Text = "Metric";
+            this.MetricButton.UseVisualStyleBackColor = true;
+            // 
+            // ImperialButton
+            // 
+            this.ImperialButton.AutoSize = true;
+            this.ImperialButton.Location = new System.Drawing.Point(1, 69);
+            this.ImperialButton.Name = "ImperialButton";
+            this.ImperialButton.Size = new System.Drawing.Size(61, 17);
+            this.ImperialButton.TabIndex = 2;
+            this.ImperialButton.TabStop = true;
+            this.ImperialButton.Text = "Imperial";
+            this.ImperialButton.UseVisualStyleBackColor = true;
             // 
             // BMICalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(304, 441);
+            this.Controls.Add(this.ImperialButton);
+            this.Controls.Add(this.MetricButton);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -284,6 +359,7 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -306,6 +382,11 @@
         private System.Windows.Forms.Button ThreeButton;
         private System.Windows.Forms.Button BackSpaceButton;
         private System.Windows.Forms.Button ResetButton;
+        private System.Windows.Forms.TextBox BMIResultTextBox;
+        private System.Windows.Forms.Button CalculateBMIButton;
+        private System.Windows.Forms.ProgressBar ProgressBar;
+        private System.Windows.Forms.RadioButton MetricButton;
+        private System.Windows.Forms.RadioButton ImperialButton;
     }
 }
 
