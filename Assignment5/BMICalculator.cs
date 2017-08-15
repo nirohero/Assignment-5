@@ -10,9 +10,9 @@ using System.Windows.Forms;
 /*
  * Name:Nirojan Kalaimannan
  * Student Number:300606595
- * Date: Aug 14, 2017
+ * Date: Aug 15, 2017
  * Description: This is where all the coding takes place for this assignment,
- * Version: 0.3 - Started implementing calculations with the BMICalculate button
+ * Version: 0.4 - Gave calculator buttons hide and show function methods
  */
 namespace Assignment5
 {
@@ -33,34 +33,70 @@ namespace Assignment5
         private void NumberKeysButton_Click(object sender, EventArgs e)
         {
             Button NumberKeysButton = sender as Button; // downcasting
-
-            switch (NumberKeysButton.Text)
+            if (HeightTextBox.Enabled == true)
             {
-                case "⌫":
-                    this._backspace();
-                    break;
+                HeightTextBox.Text += NumberKeysButton.Text;
             }
-            HeightTextBox.Text +=NumberKeysButton.Text;
-            //WeightTextBox.Text += NumberKeysButton.Text;
+            if (WeightTextBox.Enabled == true)
+            {
+                WeightTextBox.Text += NumberKeysButton.Text;
+            }
+
+           
         }
+        private void WeightTextBox_Click(object sender, EventArgs e)
+        {
+            OneButtton.Show();
+            TwoButton.Show();
+            ThreeButton.Show();
+            FourButton.Show();
+            FiveButton.Show();
+            SixButton.Show();
+            SevenButton.Show();
+            EightButton.Show();
+            NineButton.Show();
+            BackSpaceButton.Show();
+            WeightTextBox.Enabled = true;
+            HeightTextBox.Enabled = false;
+        }
+        private void HeightTextBox_Click(object sender, EventArgs e)
+        {
+            OneButtton.Show();
+            TwoButton.Show();
+            ThreeButton.Show();
+            FourButton.Show();
+            FiveButton.Show();
+            SixButton.Show();
+            SevenButton.Show();
+            EightButton.Show();
+            NineButton.Show();
+            BackSpaceButton.Show();
+            HeightTextBox.Enabled = true;
+            WeightTextBox.Enabled = false;
+
+        }
+
         /// <summary>
         /// This is the private _backspace method. It deletes the previous number key entered by the user
         /// </summary>
-        private void _backspace()
+        /*private void _backspace()
         {
-            WeightTextBox.Text = WeightTextBox.Text.Remove(WeightTextBox.Text.Length -1,1);
+            HeightTextBox.Text = HeightTextBox.Text.Remove(HeightTextBox.Text.Length - 1, 1);
+            //WeightTextBox.Text = WeightTextBox.Text.Remove(WeightTextBox.Text.Length -1,1);
         }
-
+        */
+        /// <summary>
+        /// This is the where the reset button clears all the current information in each text box.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ResetButton_Click(object sender, EventArgs e)
-        {
-            
+        {   
             WeightTextBox.Clear();
             HeightTextBox.Clear();
             BMIResultTextBox.Clear();
-        }
-        private void ImperialRadioButton_CheckedChanged(object sender, EventArgs e)
-        {
-            //keep
+            MetricRadioButton.Checked = false;
+            ImperialRadioButton.Checked = true;
         }
 
         private void MetricRadioButton_CheckedChanged(object sender, EventArgs e)
@@ -69,7 +105,6 @@ namespace Assignment5
             if (ImperialRadioButton.Checked) { MetersLabel.Text = "in"; KilogramsLabel.Text = "lbs";} 
 
         }
-
         private void CalculateBMIButton_Click(object sender, EventArgs e)
         {
             //Variables created to do calculations from the height and width textboxs
@@ -87,10 +122,41 @@ namespace Assignment5
                 BMIResultTextBox.Text = bmi.ToString();
             }
         }
+        private void _backspace(object sender, EventArgs e)
+        {
+            if (HeightTextBox.Text == "" && WeightTextBox.Text == "")
+            {
+                BackSpaceButton.Enabled=false;
+            }
+            if (HeightTextBox.Text.Length > 0)
+            {
+                HeightTextBox.Text = HeightTextBox.Text.Remove(HeightTextBox.Text.Length - 1, 1);
+            }
+            if (WeightTextBox.Text.Length > 0)
+            {
+                WeightTextBox.Text = WeightTextBox.Text.Remove(WeightTextBox.Text.Length - 1, 1);
+            }
+        }
+
+        private void BMICalculator_Load(object sender, EventArgs e)
+        {
+            ImperialRadioButton.Checked=true;
+            BackSpaceButton.Hide();
+            ZeroButton.Hide();
+            OneButtton.Hide();
+            TwoButton.Hide();
+            ThreeButton.Hide();
+            FourButton.Hide();
+            FiveButton.Hide();
+            SixButton.Hide();
+            SevenButton.Hide();
+            EightButton.Hide();
+            NineButton.Hide();
+        }
 
         private void HeightTextBox_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
