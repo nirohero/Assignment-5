@@ -12,7 +12,7 @@ using System.Windows.Forms;
  * Student Number:300606595
  * Date: Aug 15, 2017
  * Description: This is where all the coding takes place for this assignment,
- * Version: 0.4 - Gave calculator buttons hide and show function methods
+ * Version: 0.5 - Added the formclosing event handler
  */
 namespace Assignment5
 {
@@ -162,6 +162,11 @@ namespace Assignment5
         private void HeightTextBox_TextChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void BMICalculator_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
         }
     }
 }

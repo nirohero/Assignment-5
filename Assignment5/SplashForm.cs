@@ -12,7 +12,7 @@ using System.Windows.Forms;
  *  Student Number:300606595
  * Date: Aug 15, 2017
  * Description: This is the splash form
- * Version: 0.1 - created a splash form
+ * Version: 0.2 - Created SplashFormTimer_Tick event handler
  */
 namespace Assignment5
 {
@@ -21,6 +21,18 @@ namespace Assignment5
         public SplashForm()
         {
             InitializeComponent();
+        }
+        /// <summary>
+        /// This is the event handler for the "Tick"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SplashFormTimer_Tick(object sender, EventArgs e)
+        {
+            BMICalculator BMIForm = new BMICalculator();
+            BMIForm.Show();
+            this.Hide();
+            SplashFormTimer.Enabled = false; // turn timer off
         }
     }
 }
