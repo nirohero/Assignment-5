@@ -8,7 +8,7 @@ using System.Windows.Forms;
  *  Student Number:300606595
  * Date: Aug 13, 2017
  * Description: This is the driver class
- * Version: 0.1 - nothing here yet
+ * Version: 0.2 - Started SplashForm first
  */
 namespace Assignment5
 {
@@ -22,7 +22,7 @@ namespace Assignment5
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BMICalculator());
+            Application.Run(new SplashForm());
         }
     }
 }
