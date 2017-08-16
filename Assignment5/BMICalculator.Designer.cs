@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.TableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.HeightLabel = new System.Windows.Forms.Label();
             this.WeightLabel = new System.Windows.Forms.Label();
             this.WeightTextBox = new System.Windows.Forms.TextBox();
@@ -52,69 +52,69 @@
             this.BMIResultTextBox = new System.Windows.Forms.TextBox();
             this.MetricRadioButton = new System.Windows.Forms.RadioButton();
             this.ImperialRadioButton = new System.Windows.Forms.RadioButton();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.TableLayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel1
+            // TableLayoutPanel
             // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel1.ColumnCount = 10;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.621993F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.30928F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.Controls.Add(this.HeightLabel, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.WeightLabel, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.WeightTextBox, 6, 1);
-            this.tableLayoutPanel1.Controls.Add(this.HeightTextBox, 6, 0);
-            this.tableLayoutPanel1.Controls.Add(this.MetersLabel, 9, 0);
-            this.tableLayoutPanel1.Controls.Add(this.KilogramsLabel, 9, 1);
-            this.tableLayoutPanel1.Controls.Add(this.CalculateBMIButton, 2, 8);
-            this.tableLayoutPanel1.Controls.Add(this.SevenButton, 3, 2);
-            this.tableLayoutPanel1.Controls.Add(this.EightButton, 5, 2);
-            this.tableLayoutPanel1.Controls.Add(this.NineButton, 7, 2);
-            this.tableLayoutPanel1.Controls.Add(this.FourButton, 3, 3);
-            this.tableLayoutPanel1.Controls.Add(this.FiveButton, 5, 3);
-            this.tableLayoutPanel1.Controls.Add(this.SixButton, 7, 3);
-            this.tableLayoutPanel1.Controls.Add(this.OneButtton, 3, 4);
-            this.tableLayoutPanel1.Controls.Add(this.TwoButton, 5, 4);
-            this.tableLayoutPanel1.Controls.Add(this.ThreeButton, 7, 4);
-            this.tableLayoutPanel1.Controls.Add(this.BackSpaceButton, 3, 5);
-            this.tableLayoutPanel1.Controls.Add(this.ZeroButton, 6, 5);
-            this.tableLayoutPanel1.Controls.Add(this.ResetButton, 3, 6);
-            this.tableLayoutPanel1.Controls.Add(this.ProgressBar, 6, 7);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(1, 92);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 10;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(305, 350);
-            this.tableLayoutPanel1.TabIndex = 0;
-            this.tableLayoutPanel1.Click += new System.EventHandler(this.NumberKeysButton_Click);
+            this.TableLayoutPanel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.TableLayoutPanel.ColumnCount = 10;
+            this.TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.621993F));
+            this.TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.30928F));
+            this.TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.TableLayoutPanel.Controls.Add(this.HeightLabel, 0, 0);
+            this.TableLayoutPanel.Controls.Add(this.WeightLabel, 0, 1);
+            this.TableLayoutPanel.Controls.Add(this.CalculateBMIButton, 2, 8);
+            this.TableLayoutPanel.Controls.Add(this.SevenButton, 3, 2);
+            this.TableLayoutPanel.Controls.Add(this.EightButton, 5, 2);
+            this.TableLayoutPanel.Controls.Add(this.NineButton, 7, 2);
+            this.TableLayoutPanel.Controls.Add(this.FourButton, 3, 3);
+            this.TableLayoutPanel.Controls.Add(this.FiveButton, 5, 3);
+            this.TableLayoutPanel.Controls.Add(this.SixButton, 7, 3);
+            this.TableLayoutPanel.Controls.Add(this.OneButtton, 3, 4);
+            this.TableLayoutPanel.Controls.Add(this.TwoButton, 5, 4);
+            this.TableLayoutPanel.Controls.Add(this.ThreeButton, 7, 4);
+            this.TableLayoutPanel.Controls.Add(this.BackSpaceButton, 3, 5);
+            this.TableLayoutPanel.Controls.Add(this.ZeroButton, 6, 5);
+            this.TableLayoutPanel.Controls.Add(this.HeightTextBox, 5, 0);
+            this.TableLayoutPanel.Controls.Add(this.WeightTextBox, 5, 1);
+            this.TableLayoutPanel.Controls.Add(this.MetersLabel, 8, 0);
+            this.TableLayoutPanel.Controls.Add(this.KilogramsLabel, 8, 1);
+            this.TableLayoutPanel.Controls.Add(this.ProgressBar, 1, 7);
+            this.TableLayoutPanel.Controls.Add(this.ResetButton, 6, 6);
+            this.TableLayoutPanel.Location = new System.Drawing.Point(1, 92);
+            this.TableLayoutPanel.Name = "TableLayoutPanel";
+            this.TableLayoutPanel.RowCount = 10;
+            this.TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.TableLayoutPanel.Size = new System.Drawing.Size(305, 350);
+            this.TableLayoutPanel.TabIndex = 0;
+            this.TableLayoutPanel.Click += new System.EventHandler(this.NumberKeysButton_Click);
             // 
             // HeightLabel
             // 
             this.HeightLabel.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.HeightLabel, 6);
-            this.HeightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TableLayoutPanel.SetColumnSpan(this.HeightLabel, 5);
+            this.HeightLabel.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HeightLabel.Location = new System.Drawing.Point(3, 0);
             this.HeightLabel.Name = "HeightLabel";
-            this.HeightLabel.Size = new System.Drawing.Size(136, 31);
+            this.HeightLabel.Size = new System.Drawing.Size(100, 22);
             this.HeightLabel.TabIndex = 0;
             this.HeightLabel.Text = "My Height";
             // 
@@ -122,33 +122,32 @@
             // 
             this.WeightLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.WeightLabel.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.WeightLabel, 6);
-            this.WeightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WeightLabel.Location = new System.Drawing.Point(3, 34);
+            this.TableLayoutPanel.SetColumnSpan(this.WeightLabel, 5);
+            this.WeightLabel.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WeightLabel.Location = new System.Drawing.Point(3, 38);
             this.WeightLabel.Name = "WeightLabel";
-            this.WeightLabel.Size = new System.Drawing.Size(141, 31);
+            this.WeightLabel.Size = new System.Drawing.Size(100, 22);
             this.WeightLabel.TabIndex = 1;
             this.WeightLabel.Text = "My Weight";
             // 
             // WeightTextBox
             // 
             this.WeightTextBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.tableLayoutPanel1.SetColumnSpan(this.WeightTextBox, 3);
+            this.TableLayoutPanel.SetColumnSpan(this.WeightTextBox, 3);
             this.WeightTextBox.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WeightTextBox.Location = new System.Drawing.Point(183, 39);
+            this.WeightTextBox.Location = new System.Drawing.Point(153, 39);
             this.WeightTextBox.Multiline = true;
             this.WeightTextBox.Name = "WeightTextBox";
             this.WeightTextBox.Size = new System.Drawing.Size(81, 20);
             this.WeightTextBox.TabIndex = 2;
             this.WeightTextBox.Click += new System.EventHandler(this.WeightTextBox_Click);
-            
             // 
             // HeightTextBox
             // 
             this.HeightTextBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.tableLayoutPanel1.SetColumnSpan(this.HeightTextBox, 3);
+            this.TableLayoutPanel.SetColumnSpan(this.HeightTextBox, 3);
             this.HeightTextBox.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HeightTextBox.Location = new System.Drawing.Point(183, 6);
+            this.HeightTextBox.Location = new System.Drawing.Point(153, 6);
             this.HeightTextBox.Multiline = true;
             this.HeightTextBox.Name = "HeightTextBox";
             this.HeightTextBox.Size = new System.Drawing.Size(81, 20);
@@ -159,28 +158,31 @@
             // MetersLabel
             // 
             this.MetersLabel.AutoSize = true;
-            this.MetersLabel.Location = new System.Drawing.Point(273, 0);
+            this.MetersLabel.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MetersLabel.Location = new System.Drawing.Point(243, 0);
             this.MetersLabel.Name = "MetersLabel";
-            this.MetersLabel.Size = new System.Drawing.Size(29, 31);
+            this.MetersLabel.Size = new System.Drawing.Size(18, 33);
             this.MetersLabel.TabIndex = 20;
-            this.MetersLabel.Text = "M";
+            this.MetersLabel.Text = "Meters";
             // 
             // KilogramsLabel
             // 
             this.KilogramsLabel.AutoSize = true;
-            this.KilogramsLabel.Location = new System.Drawing.Point(273, 33);
+            this.KilogramsLabel.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.KilogramsLabel.Location = new System.Drawing.Point(243, 33);
             this.KilogramsLabel.Name = "KilogramsLabel";
-            this.KilogramsLabel.Size = new System.Drawing.Size(29, 33);
+            this.KilogramsLabel.Size = new System.Drawing.Size(18, 33);
             this.KilogramsLabel.TabIndex = 21;
             this.KilogramsLabel.Text = "Kg";
             // 
             // CalculateBMIButton
             // 
-            this.tableLayoutPanel1.SetColumnSpan(this.CalculateBMIButton, 7);
+            this.TableLayoutPanel.SetColumnSpan(this.CalculateBMIButton, 7);
+            this.CalculateBMIButton.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CalculateBMIButton.ImageKey = "(none)";
             this.CalculateBMIButton.Location = new System.Drawing.Point(63, 267);
             this.CalculateBMIButton.Name = "CalculateBMIButton";
-            this.tableLayoutPanel1.SetRowSpan(this.CalculateBMIButton, 3);
+            this.TableLayoutPanel.SetRowSpan(this.CalculateBMIButton, 3);
             this.CalculateBMIButton.Size = new System.Drawing.Size(144, 43);
             this.CalculateBMIButton.TabIndex = 18;
             this.CalculateBMIButton.Text = "Calculate BMI";
@@ -190,7 +192,7 @@
             // SevenButton
             // 
             this.SevenButton.BackColor = System.Drawing.Color.PaleGreen;
-            this.tableLayoutPanel1.SetColumnSpan(this.SevenButton, 2);
+            this.TableLayoutPanel.SetColumnSpan(this.SevenButton, 2);
             this.SevenButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SevenButton.Location = new System.Drawing.Point(93, 69);
             this.SevenButton.Name = "SevenButton";
@@ -203,7 +205,7 @@
             // EightButton
             // 
             this.EightButton.BackColor = System.Drawing.Color.PaleGreen;
-            this.tableLayoutPanel1.SetColumnSpan(this.EightButton, 2);
+            this.TableLayoutPanel.SetColumnSpan(this.EightButton, 2);
             this.EightButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EightButton.Location = new System.Drawing.Point(153, 69);
             this.EightButton.Name = "EightButton";
@@ -216,7 +218,7 @@
             // NineButton
             // 
             this.NineButton.BackColor = System.Drawing.Color.PaleGreen;
-            this.tableLayoutPanel1.SetColumnSpan(this.NineButton, 2);
+            this.TableLayoutPanel.SetColumnSpan(this.NineButton, 2);
             this.NineButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NineButton.Location = new System.Drawing.Point(213, 69);
             this.NineButton.Name = "NineButton";
@@ -229,7 +231,7 @@
             // FourButton
             // 
             this.FourButton.BackColor = System.Drawing.Color.PaleGreen;
-            this.tableLayoutPanel1.SetColumnSpan(this.FourButton, 2);
+            this.TableLayoutPanel.SetColumnSpan(this.FourButton, 2);
             this.FourButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FourButton.Location = new System.Drawing.Point(93, 102);
             this.FourButton.Name = "FourButton";
@@ -242,7 +244,7 @@
             // FiveButton
             // 
             this.FiveButton.BackColor = System.Drawing.Color.PaleGreen;
-            this.tableLayoutPanel1.SetColumnSpan(this.FiveButton, 2);
+            this.TableLayoutPanel.SetColumnSpan(this.FiveButton, 2);
             this.FiveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FiveButton.Location = new System.Drawing.Point(153, 102);
             this.FiveButton.Name = "FiveButton";
@@ -255,7 +257,7 @@
             // SixButton
             // 
             this.SixButton.BackColor = System.Drawing.Color.PaleGreen;
-            this.tableLayoutPanel1.SetColumnSpan(this.SixButton, 2);
+            this.TableLayoutPanel.SetColumnSpan(this.SixButton, 2);
             this.SixButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SixButton.Location = new System.Drawing.Point(213, 102);
             this.SixButton.Name = "SixButton";
@@ -268,7 +270,7 @@
             // OneButtton
             // 
             this.OneButtton.BackColor = System.Drawing.Color.PaleGreen;
-            this.tableLayoutPanel1.SetColumnSpan(this.OneButtton, 2);
+            this.TableLayoutPanel.SetColumnSpan(this.OneButtton, 2);
             this.OneButtton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OneButtton.Location = new System.Drawing.Point(93, 135);
             this.OneButtton.Name = "OneButtton";
@@ -281,7 +283,7 @@
             // TwoButton
             // 
             this.TwoButton.BackColor = System.Drawing.Color.PaleGreen;
-            this.tableLayoutPanel1.SetColumnSpan(this.TwoButton, 2);
+            this.TableLayoutPanel.SetColumnSpan(this.TwoButton, 2);
             this.TwoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TwoButton.ForeColor = System.Drawing.SystemColors.ControlText;
             this.TwoButton.Location = new System.Drawing.Point(153, 135);
@@ -295,7 +297,7 @@
             // ThreeButton
             // 
             this.ThreeButton.BackColor = System.Drawing.Color.PaleGreen;
-            this.tableLayoutPanel1.SetColumnSpan(this.ThreeButton, 3);
+            this.TableLayoutPanel.SetColumnSpan(this.ThreeButton, 3);
             this.ThreeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ThreeButton.Location = new System.Drawing.Point(213, 135);
             this.ThreeButton.Name = "ThreeButton";
@@ -308,7 +310,7 @@
             // BackSpaceButton
             // 
             this.BackSpaceButton.BackColor = System.Drawing.Color.PaleGreen;
-            this.tableLayoutPanel1.SetColumnSpan(this.BackSpaceButton, 3);
+            this.TableLayoutPanel.SetColumnSpan(this.BackSpaceButton, 3);
             this.BackSpaceButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BackSpaceButton.Location = new System.Drawing.Point(93, 168);
             this.BackSpaceButton.Name = "BackSpaceButton";
@@ -321,7 +323,7 @@
             // ZeroButton
             // 
             this.ZeroButton.BackColor = System.Drawing.Color.PaleGreen;
-            this.tableLayoutPanel1.SetColumnSpan(this.ZeroButton, 3);
+            this.TableLayoutPanel.SetColumnSpan(this.ZeroButton, 3);
             this.ZeroButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ZeroButton.Location = new System.Drawing.Point(183, 168);
             this.ZeroButton.Name = "ZeroButton";
@@ -334,9 +336,9 @@
             // ResetButton
             // 
             this.ResetButton.BackColor = System.Drawing.Color.Yellow;
-            this.tableLayoutPanel1.SetColumnSpan(this.ResetButton, 3);
-            this.ResetButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResetButton.Location = new System.Drawing.Point(93, 201);
+            this.TableLayoutPanel.SetColumnSpan(this.ResetButton, 3);
+            this.ResetButton.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ResetButton.Location = new System.Drawing.Point(183, 201);
             this.ResetButton.Name = "ResetButton";
             this.ResetButton.Size = new System.Drawing.Size(84, 27);
             this.ResetButton.TabIndex = 16;
@@ -346,8 +348,8 @@
             // 
             // ProgressBar
             // 
-            this.tableLayoutPanel1.SetColumnSpan(this.ProgressBar, 4);
-            this.ProgressBar.Location = new System.Drawing.Point(183, 234);
+            this.TableLayoutPanel.SetColumnSpan(this.ProgressBar, 4);
+            this.ProgressBar.Location = new System.Drawing.Point(33, 234);
             this.ProgressBar.Name = "ProgressBar";
             this.ProgressBar.Size = new System.Drawing.Size(110, 27);
             this.ProgressBar.TabIndex = 19;
@@ -366,9 +368,10 @@
             // MetricRadioButton
             // 
             this.MetricRadioButton.AutoSize = true;
+            this.MetricRadioButton.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MetricRadioButton.Location = new System.Drawing.Point(13, 58);
             this.MetricRadioButton.Name = "MetricRadioButton";
-            this.MetricRadioButton.Size = new System.Drawing.Size(106, 35);
+            this.MetricRadioButton.Size = new System.Drawing.Size(88, 26);
             this.MetricRadioButton.TabIndex = 1;
             this.MetricRadioButton.TabStop = true;
             this.MetricRadioButton.Text = "Metric";
@@ -378,9 +381,10 @@
             // ImperialRadioButton
             // 
             this.ImperialRadioButton.AutoSize = true;
+            this.ImperialRadioButton.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ImperialRadioButton.Location = new System.Drawing.Point(116, 58);
             this.ImperialRadioButton.Name = "ImperialRadioButton";
-            this.ImperialRadioButton.Size = new System.Drawing.Size(128, 35);
+            this.ImperialRadioButton.Size = new System.Drawing.Size(108, 26);
             this.ImperialRadioButton.TabIndex = 2;
             this.ImperialRadioButton.TabStop = true;
             this.ImperialRadioButton.Text = "Imperial";
@@ -393,7 +397,7 @@
             this.ClientSize = new System.Drawing.Size(304, 441);
             this.Controls.Add(this.ImperialRadioButton);
             this.Controls.Add(this.MetricRadioButton);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.TableLayoutPanel);
             this.Controls.Add(this.BMIResultTextBox);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -402,8 +406,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BMICalculator";
             this.Load += new System.EventHandler(this.BMICalculator_Load);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
+            this.TableLayoutPanel.ResumeLayout(false);
+            this.TableLayoutPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -411,7 +415,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel TableLayoutPanel;
         private System.Windows.Forms.Label HeightLabel;
         private System.Windows.Forms.TextBox HeightTextBox;
         private System.Windows.Forms.Label WeightLabel;

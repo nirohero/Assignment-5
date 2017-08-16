@@ -122,6 +122,11 @@ namespace Assignment5
                 BMIResultTextBox.Text = bmi.ToString();
             }
         }
+        /// <summary>
+        /// Coding behind the backspace button on the calculator
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void _backspace(object sender, EventArgs e)
         {
             if (HeightTextBox.Text == "" && WeightTextBox.Text == "")
