@@ -166,7 +166,7 @@ namespace Assignment5
 
         private void BMICalculator_FormClosing(object sender, FormClosingEventArgs e)
         {
-
+            Application.Exit();
         }
     }
 }

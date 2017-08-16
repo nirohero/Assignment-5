@@ -8,12 +8,14 @@ using System.Windows.Forms;
  *  Student Number:300606595
  * Date: Aug 13, 2017
  * Description: This is the driver class
- * Version: 0.2 - Started SplashForm first
+ * Version: 0.3 - created an instance of the BMICalculatorForm object
  */
 namespace Assignment5
 {
     static class Program
     {
+        // Create reference to Forms
+        public static BMICalculator BmiForm;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -22,6 +24,9 @@ namespace Assignment5
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            //Instanitiated new object of type BMICalculator form
+            BmiForm = new BMICalculator(); 
             Application.Run(new SplashForm());
         }
     }
