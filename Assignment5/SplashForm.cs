@@ -24,7 +24,7 @@ namespace Assignment5
         public BMICalculator BmiForm {
             get
             {
-                return Program.BmiForm;
+                return Program.bmiForm;
             }
         }
         /// <summary>

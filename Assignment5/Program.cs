@@ -15,7 +15,7 @@ namespace Assignment5
     static class Program
     {
         // Create reference to Forms
-        public static BMICalculator BmiForm;
+        public static BMICalculator bmiForm;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -26,7 +26,7 @@ namespace Assignment5
             Application.SetCompatibleTextRenderingDefault(false);
 
             //Instanitiated new object of type BMICalculator form
-            BmiForm = new BMICalculator(); 
+            bmiForm = new BMICalculator(); 
             Application.Run(new SplashForm());
         }
     }

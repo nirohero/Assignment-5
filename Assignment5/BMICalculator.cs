@@ -12,13 +12,12 @@ using System.Windows.Forms;
  * Student Number:300606595
  * Date: Aug 15, 2017
  * Description: This is where all the coding takes place for this assignment,
- * Version: 0.5 - Added the formclosing event handler
+ * Version: 0.5 - Added progress bar functionality
  */
 namespace Assignment5
 {
     public partial class BMICalculator : Form
     {
-        //PRIVATE INSTANCE VARIABLES
        
         
         public BMICalculator()
@@ -44,6 +43,11 @@ namespace Assignment5
 
            
         }
+        /// <summary>
+        /// When the WeightTextBox is clicked, the following code starts functioning
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void WeightTextBox_Click(object sender, EventArgs e)
         {
             OneButtton.Show();
@@ -57,8 +61,21 @@ namespace Assignment5
             NineButton.Show();
             BackSpaceButton.Show();
             WeightTextBox.Enabled = true;
-            HeightTextBox.Enabled = false;
+
+            if ((ImperialRadioButton.Checked) ||(MetricRadioButton.Checked))
+            {
+                if (WeightTextBox.Text != "")
+                {
+                    ProgressBar.Value = 25;
+                }
+            }
+        
         }
+        /// <summary>
+        /// When the HeightTextBox is clicked, the following code starts functioning
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void HeightTextBox_Click(object sender, EventArgs e)
         {
             OneButtton.Show();
@@ -72,19 +89,16 @@ namespace Assignment5
             NineButton.Show();
             BackSpaceButton.Show();
             HeightTextBox.Enabled = true;
-            WeightTextBox.Enabled = false;
+            if ((ImperialRadioButton.Checked) || (MetricRadioButton.Checked))
+            {
+                if (HeightTextBox.Text != "")
+                {
+                    ProgressBar.Value = 25;
+                }
+            }
 
         }
 
-        /// <summary>
-        /// This is the private _backspace method. It deletes the previous number key entered by the user
-        /// </summary>
-        /*private void _backspace()
-        {
-            HeightTextBox.Text = HeightTextBox.Text.Remove(HeightTextBox.Text.Length - 1, 1);
-            //WeightTextBox.Text = WeightTextBox.Text.Remove(WeightTextBox.Text.Length -1,1);
-        }
-        */
         /// <summary>
         /// This is the where the reset button clears all the current information in each text box.
         /// </summary>
@@ -97,14 +111,20 @@ namespace Assignment5
             BMIResultTextBox.Clear();
             MetricRadioButton.Checked = false;
             ImperialRadioButton.Checked = true;
+            ProgressBar.Value=10;
         }
 
         private void MetricRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-            if (MetricRadioButton.Checked) { MetersLabel.Text = "m"; KilogramsLabel.Text = "kg"; }
-            if (ImperialRadioButton.Checked) { MetersLabel.Text = "in"; KilogramsLabel.Text = "lbs";} 
+            if (MetricRadioButton.Checked) { MetersLabel.Text = "meters"; KilogramsLabel.Text = "kg"; }
+            if (ImperialRadioButton.Checked) { MetersLabel.Text = "inch"; KilogramsLabel.Text = "lbs";} 
 
         }
+        /// <summary>
+        /// When the CalculateBMI button is clicked, everything inside this method below starts to function
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void CalculateBMIButton_Click(object sender, EventArgs e)
         {
             //Variables created to do calculations from the height and width textboxs
@@ -121,6 +141,17 @@ namespace Assignment5
                 bmi =weight*703/Math.Pow(height,2);
                 BMIResultTextBox.Text = bmi.ToString();
             }
+           
+            if ((HeightTextBox.Text != "")&& (WeightTextBox.Text != ""))
+            {
+                ProgressBar.Value=50;
+            }
+            if(BMIResultTextBox.Text!="")
+            {
+                ProgressBar.Value=100;
+               
+            }
+   
         }
         /// <summary>
         /// Coding behind the backspace button on the calculator
@@ -142,7 +173,11 @@ namespace Assignment5
                 WeightTextBox.Text = WeightTextBox.Text.Remove(WeightTextBox.Text.Length - 1, 1);
             }
         }
-
+        /// <summary>
+        /// This is the event handler that occurs when the form is opened
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BMICalculator_Load(object sender, EventArgs e)
         {
             ImperialRadioButton.Checked=true;
@@ -157,16 +192,20 @@ namespace Assignment5
             SevenButton.Hide();
             EightButton.Hide();
             NineButton.Hide();
+            this.ProgressBar.Increment(10);
+            HeightTextBox.Enabled = true;
+            WeightTextBox.Enabled = true;
         }
-
-        private void HeightTextBox_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
+        /// <summary>
+        /// Event handler that is needed for the form to close when pressing "x" on the  form control
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BMICalculator_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
         }
+
+      
     }
 }
